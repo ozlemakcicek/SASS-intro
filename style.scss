@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+$bgColor:rgb(71, 235, 208);
+$fontFamily:'Gill Sans',
+'Gill Sans MT',
+Calibri,
+'Trebuchet MS',
+sans-serif;
+$fontSize:1.2rem;
+$navBgColor:rgb(62, 149, 139);
+$mainBgColor:rgb(237, 163, 163);
+$fontColor:white;
+$myBorder:2px solid rgb(62, 149,139);
+$buttonsBgColor:rgb(73, 164, 153);
+
+
+
+
+body{
+    background-color: $bgColor;
+    
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+    margin: 1rem;
+}
+
+header{
+    background-color: $navBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 200px;
+        border: $myBorder;
+        border-radius: 10px;
+        padding: 0.2rem;
+    }
+
+    ul{
+        li{
+            display: inline-block;
+            padding: 1rem;
+            
+
+            a{
+                text-decoration: none;
+                color: $fontColor;
+                padding: 1rem;
+
+                &:hover{
+                    background-color:rgb(242, 115, 214) ;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    
+}
+
+.banner{
+    background-color: $mainBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    aside{
+        button{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    border: none;
+  
+
+    
+
+    &:hover{
+        background-color: $buttonsBgColor;  color: $fontColor;
+    }
+
+}
+}
+
+img{
+    border-radius: 10px; 
+    min-width: 250px;
+    max-width: 400px;
+   
+    
+}
+
+}
+
+
+//! @MIXIN  @INCLUDE//
+
+@mixin myBox($bgColor, $color){
+
+    background-color: $bgColor;
+    color: $color;
+    width: 25%;
+    height: 15vh;
+    margin-top: 2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+  
+    
+}
+
+.cards{
+    display: flex;
+     gap:0.5rem;
+     padding: 1rem;
+
+.card1{
+    @include myBox(rgb(107, 107, 216),white)
+}
+
+
+.card2{
+    @include myBox(pink, white)
+}
+
+.card3 {
+    @include myBox(rgb(140, 240, 140), white)
+}
+
+.card4 {
+    @include myBox(rgb(227, 140, 240), white)
+}
+}
+
+//!  @EXTEND
+
+.articles{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    .article1{
+        width: 50%;
+        height: 15vh;
+        background-color: salmon;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .article2{
+        @extend.article1;
+        background-color: sandybrown;
+        
+    
+    }
+}
+
+
+//! FOR LOOP       IF_ELSE    
+
+
+footer{
+
+    $renk:1;
+    p{
+        @if $renk ==1{
+          background-color: rgb(183, 96, 183);
+        }
+        @else if $renk==2{
+            background-color: violet;
+        }
+        @else{
+            background-color: orange;
+        }
+        
+    }
+}
+
+
+
+.social-icons{
+    display: flex;
+    height: 10rem;
+    $textColor:orange, rgb(36, 234, 145), pink, purple,green;
+
+@for $i from 1 through 5{
+    .social#{$i}{
+        width: 20%;
+        background-color: blue;
+        font-size: $i*1rem;
+        color: nth($textColor, $i );
+        background-color: lighten(blue, 5*$i);
+
+    }
+}
+
+}

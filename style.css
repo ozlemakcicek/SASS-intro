@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(71, 235, 208);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  margin: 1rem;
+}
+
+header {
+  background-color: rgb(62, 149, 139);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 200px;
+  border: 2px solid rgb(62, 149, 139);
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+header ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+header ul li a:hover {
+  background-color: rgb(242, 115, 214);
+  border-radius: 10px;
+}
+
+.banner {
+  background-color: rgb(237, 163, 163);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+}
+.banner aside button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+.banner aside button:hover {
+  background-color: rgb(73, 164, 153);
+  color: white;
+}
+.banner img {
+  border-radius: 10px;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.cards .card1 {
+  background-color: rgb(107, 107, 216);
+  color: white;
+  width: 25%;
+  height: 15vh;
+  margin-top: 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.cards .card2 {
+  background-color: pink;
+  color: white;
+  width: 25%;
+  height: 15vh;
+  margin-top: 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.cards .card3 {
+  background-color: rgb(140, 240, 140);
+  color: white;
+  width: 25%;
+  height: 15vh;
+  margin-top: 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.cards .card4 {
+  background-color: rgb(227, 140, 240);
+  color: white;
+  width: 25%;
+  height: 15vh;
+  margin-top: 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.articles {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.articles .article1, .articles .article2 {
+  width: 50%;
+  height: 15vh;
+  background-color: salmon;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.articles .article2 {
+  background-color: sandybrown;
+}
+
+footer p {
+  background-color: rgb(183, 96, 183);
+}
+
+.social-icons {
+  display: flex;
+  height: 10rem;
+}
+.social-icons .social1 {
+  width: 20%;
+  background-color: blue;
+  font-size: 1rem;
+  color: orange;
+  background-color: #1a1aff;
+}
+.social-icons .social2 {
+  width: 20%;
+  background-color: blue;
+  font-size: 2rem;
+  color: rgb(36, 234, 145);
+  background-color: #3333ff;
+}
+.social-icons .social3 {
+  width: 20%;
+  background-color: blue;
+  font-size: 3rem;
+  color: pink;
+  background-color: #4d4dff;
+}
+.social-icons .social4 {
+  width: 20%;
+  background-color: blue;
+  font-size: 4rem;
+  color: purple;
+  background-color: #6666ff;
+}
+.social-icons .social5 {
+  width: 20%;
+  background-color: blue;
+  font-size: 5rem;
+  color: green;
+  background-color: #8080ff;
+}/*# sourceMappingURL=style.css.map */
